@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="场景匹配" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="有责任未匹配到场景" transform="translate(-794.000000, -537.000000)">
+            <g id="Group-4" transform="translate(795.000000, 537.000000)">
+                <g id="Group-3">
+                    <g id="triangle" transform="translate(0.000000, 1.000000)">
+                        <path d="M9.4813046,1.0870255 L0.290817553,17.052371 C-0.0947688124,17.7472131 -0.097070985,18.6027786 0.284769974,19.2998568 C0.666610933,19.9969349 1.37524296,20.4308252 2.14627598,20.4396437 L20.5272501,20.4396437 C21.2982831,20.4308252 22.0069151,19.9969349 22.3887561,19.2998568 C22.770597,18.6027786 22.7682949,17.7472131 22.3827085,17.052371 L13.1922214,1.0870255 C12.7988147,0.412146776 12.0953158,0 11.336763,0 C10.5782102,0 9.87471133,0.412146776 9.4813046,1.0870255 Z" id="Shape" stroke="#D4A405" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <rect id="Rectangle" fill="#D4A405" x="10.12" y="5.52" width="2.76" height="7.36" rx="1.38"></rect>
+                        <circle id="Oval-2" fill="#D4A405" cx="11.5" cy="16.1" r="1.38"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

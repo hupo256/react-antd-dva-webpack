@@ -1,0 +1,482 @@
+.fullboard {
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+      margin-top: 10px;
+    }
+  }
+  .marginBottom {
+    margin-bottom: 20px !important;
+  }
+  .alignRight {
+    text-align: right;
+  }
+  .initBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    > img {
+      margin-top: 125px;
+    }
+    > div {
+      width: 100%;
+      text-align: center;
+      margin-top: 45px;
+      font-size: 16px;
+      color: #9b9b9b;
+    }
+    .startBtn {
+      font-size: 20px;
+      color: #4291eb;
+      margin: 0 3px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .newBtn {
+    border: 1px solid #4291eb;
+    color: #4291eb;
+    margin-top: 5px;
+  }
+  .delBtn {
+    border: 1px solid #eb3850;
+    border-radius: 4px;
+    color: #eb3850;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+}
+.disabledDelBtn {
+  color: #ffb8ba !important;
+  border: 1px solid #ffb8ba !important;
+  &:hover{
+    cursor: default;
+  }
+}
+
+.settingboard {
+  .topLine {
+    width: 100%;
+    overflow: hidden;
+    .delBtn {
+      margin: 0 15px 0 0 !important;
+    }
+  }
+  .priBtn {
+    width: 100px;
+    background: #4291eb;
+    border: 1px solid #4291eb;
+    color: white;
+    border-radius: 4px;
+    float: right;
+  }
+  .disabledpriBtn {
+    width: 100px;
+    background: #c2e4ff;
+    border: 1px solid #c2e4ff;
+    color: white;
+    border-radius: 4px;
+    float: right;
+    &:hover {
+      cursor: auto;
+    }
+  }
+  .subBtn {
+    width: 100px;
+    border: 1px solid #4291eb;
+    color: #4291eb;
+    border-radius: 4px;
+    background: transparent;
+    float: right;
+    margin-left: 15px;
+  }
+  .delBtn {
+    border: 1px solid #eb3850;
+    border-radius: 4px;
+    color: #eb3850;
+    float: right;
+    margin: 25px 100px 20px 0;
+  }
+  .customCard {
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(127, 127, 127, 0.08);
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 12px;
+    min-height: 800px;
+    .titleLine {
+      display: inline-block;
+      width: 100%;
+      border-left: 8px solid #39ccc7;
+      height: 28px;
+      margin-top: 30px;
+      padding-left: 22px;
+      font-weight: 500;
+      font-size: 20px;
+      color: #989ca3;
+    }
+    .newtitleLine {
+      display: inline-block;
+      width: 120px;
+      border-right: 8px solid #54565A;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      color: rgba(0,0,0,0.65);
+      background: #E5E8ED;
+    }
+    .attrList {
+      width: 100%;
+      overflow: hidden;
+      .attrItem {
+        height: 32px;
+        width: 50%;
+        float: left;
+        margin-top: 20px;
+        overflow: hidden;
+      }
+    }
+    .riskList {
+      width: 100%;
+      overflow: hidden;
+      .riskItem {
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+        overflow: hidden;
+        .tags {
+          float: left;
+          max-width: 600px;
+          width: 60%;
+          margin-top: 3px;
+          overflow: hidden;
+          > span {
+            font-size: 14px;
+            color: #4291eb;
+            text-align: left;
+            line-height: 22px;
+            margin-left: 15px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        :global {
+          .ant-tag {
+            background: #c2e4ff;
+            border: 1px solid #6db2f7;
+            border-radius: 2px;
+            color: #4a4a4a;
+            height: 22px;
+            margin-bottom: 12px;
+          }
+          .ant-switch {
+            float: left;
+            margin-top: 3px;
+            margin-right: 30px;
+          }
+        }
+        .notif {
+          font-size: 12px;
+          color: #4291eb;
+          line-height: 22px;
+          margin-top: 3px;
+          > img {
+            margin: -2px 10px 0 0;
+          }
+        }
+      }
+    }
+    .divider {
+      margin: 20px 5px 0 5px;
+      width: calc(~'100% - 10px');
+      float: left;
+      height: 1px;
+      border-bottom: 1px solid #f0f2f4;
+    }
+    .label {
+      max-width: 280px;
+      width: 30%;
+      text-align: right;
+      line-height: 30px;
+      margin-right: 7px;
+      float: left;
+      &:before {
+        content: '*';
+        color: #eb3850;
+        margin-right: 5px;
+      }
+    }
+    .notrequiredlabel {
+      &:before {
+        content: '';
+      }
+    }
+    .attrInput {
+      float: left;
+      max-width: 400px;
+      width: 50%;
+    }
+  }
+  .dfCard{
+    overflow: hidden;
+    .attrItem{
+      height: auto !important;
+      width: 33% !important;
+      padding-left: 35px;
+      // margin-bottom: 30px;
+      .label{
+        width: 100%;
+        float:none;
+        text-align: left;
+        color: #4A4A4A;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        line-height: 40px;
+      }
+      :global{
+        .ant-checkbox-group{
+          width: 100%;
+        }
+        .ant-checkbox-group-item{
+          width: 30%;
+          line-height: 35px;
+          min-width: 110px;
+        }
+      }
+    }
+    .widthattrItem{
+      width: 100% !important;
+    }
+  }
+}
+.darkblock {
+  background: #f9f9f9;
+  width: calc(~'100% - 50px');
+  padding: 15px;
+  margin: 25px;
+  margin-top: 70px;
+  overflow: hidden;
+}
+.infoslot {
+  width: 50%;
+  float: left;
+  line-height: 35px;
+}
+.newinfoslot{
+  width: 25%;
+  float: left;
+  line-height: 35px;
+  text-align: center;
+}
+.infolabel {
+  width: 35%;
+  height: 35px;
+  text-align: right;
+  display: inline-block;
+}
+.diseases {
+  overflow: hidden;
+  width: 100%;
+  > div {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-right: 70px;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .checkedItem {
+    background: #4291eb;
+    color: white;
+  }
+  .uncheckedItem {
+    &:hover {
+      background: #ebf7ff;
+      cursor: pointer;
+    }
+  }
+}
+.foldBtn {
+  float: right;
+  color: #4291eb;
+  font-size: 16px;
+  margin: -30px 100px 30px 0;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.dutyboard {
+  width: 100%;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.checkboxBlock {
+  width: 20px;
+  margin-left: 20px;
+  margin-top: 120px;
+  float: left;
+}
+.dutyBlock {
+  width: calc(~'100% - 90px');
+  float: left;
+  margin: 0 25px 0 20px;
+  border: 1px solid #f0f2f5;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  padding-bottom: 30px;
+  border-radius: 2px;
+  .dutyTitle {
+    height: 56px;
+    background: #b8f2ea;
+    overflow: hidden;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    > div {
+      float: left;
+      line-height: 56px;
+      &:first-child {
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 23px;
+      }
+      &:nth-child(2) {
+        font-size: 14px;
+        margin-left: 50px;
+      }
+    }
+    > img {
+      float: right;
+      margin-right: 40px;
+      margin-top: 18px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .noteditable {
+    line-height: 30px;
+    float: left;
+    margin-right: 40px;
+    max-width: calc(~'90% - 320px');
+  }
+}
+.plusBtn {
+  margin-left: 3%;
+  margin-top: 25px;
+  color: #4291eb;
+  font-size: 12px;
+  line-height: 35px;
+  float: left;
+}
+.numbernotif {
+  margin-left: 3%;
+  margin-top: 25px;
+  color: #4291eb;
+  font-size: 12px;
+  line-height: 35px;
+  float: left;
+}
+.riskControl {
+  height: 450px;
+  > div:first-child {
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    .checkall {
+      margin: 0 10px 0 25px;
+    }
+  }
+  .optionList {
+    height: 420px;
+    overflow: scroll;
+    margin: 10px;
+    :global {
+      .ant-checkbox-wrapper {
+        width: 100%;
+        margin: 8px;
+      }
+    }
+  }
+}
+
+.primelabel {
+  // margin-left: 25%;
+  width: 100% !important;
+}
+
+.labelcontent {
+  line-height: 30px;
+}
+
+.ruleHandle{
+  &:hover{
+    cursor: pointer;
+  }
+}
+.ruleBlock{
+  background: #F9F9F9;
+  // overflow: hidden;
+  margin: 20px 0 0 20%;
+  width: 70%;
+  overflow: scroll;
+  height: 100px;
+  position: relative;
+  .ruleLine{
+    line-height: 30px;
+    margin-top: 15px;
+    :global{
+      .ant-switch{
+        margin-top: 7px !important;
+      }
+    }
+  }
+  // .label{
+  //   width: 25% !important;
+  // }
+}
+.triangle{
+  position: absolute;
+  left: calc(~'20% + 180px');
+  width: 0px;
+  height: 0px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #F9F9F9 transparent;
+}
+.empthinfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d4a405;
+  font-size: 16px;
+  height: 80px;
+  > div {
+    margin: 10px;
+  }
+  span{
+    &:hover{
+      cursor: pointer;
+    }
+    color:#4291EB;
+  }
+}
+.warningItem{
+  border: 1px solid red !important;
+}
+.warningSelect{
+  :global{
+    .ant-select-selection{
+      border: 1px solid red !important;
+    }
+  }
+}

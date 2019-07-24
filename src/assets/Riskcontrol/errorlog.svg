@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="33px" viewBox="0 0 31 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="2" width="22" height="25"></rect>
+        <filter x="-27.3%" y="-24.0%" width="154.5%" height="148.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.165704257 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="导入-layout修改" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="再跑一次风控-copy" transform="translate(-1004.000000, -249.000000)">
+            <g id="Group-3" transform="translate(1008.000000, 251.000000)">
+                <g id="Group-2">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill-opacity="0.377717391" fill="#ADB1B8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle" fill="#FFFFFF" x="1" y="3" width="20" height="23"></rect>
+                    <path d="M9.10064518,-4.26325641e-13 L13.2761473,-4.26325641e-13 C13.5067539,-4.26325641e-13 13.7897046,0.223857625 13.9081354,0.5 L14.3370112,1.5 C14.455442,1.77614237 14.3005008,2 13.9909403,2 L8.38585217,2 C8.07629169,2 7.92135047,1.77614237 8.03978125,1.5 L8.46865706,0.5 C8.58708785,0.223857625 8.87003856,-4.26325641e-13 9.10064518,-4.26325641e-13 Z" id="Rectangle" fill="#C79364"></path>
+                    <rect id="Rectangle" fill="#C79364" x="6" y="1" width="10" height="3" rx="1"></rect>
+                    <path d="M4.5,6.96 L17.5,6.96" id="Line-2" stroke="#ADB1B8" stroke-linecap="square"></path>
+                    <path d="M4.5,6.96 L17.5,6.96" id="Line-2" stroke="#D6DBE2" stroke-linecap="square"></path>
+                    <path d="M4.5,9.96 L17.5,9.96" id="Line-2" stroke="#D6DBE2" stroke-linecap="square"></path>
+                    <path d="M4.5,12.96 L17.5,12.96" id="Line-2" stroke="#D6DBE2" stroke-linecap="square"></path>
+                    <path d="M4.5,15.96 L17.5,15.96" id="Line-2" stroke="#D6DBE2" stroke-linecap="square"></path>
+                    <path d="M4.5,18.96 L17.5,18.96" id="Line-2" stroke="#D6DBE2" stroke-linecap="square"></path>
+                    <path d="M4.5,21.96 L17.5,21.96" id="Line-2" stroke="#D6DBE2" stroke-linecap="square"></path>
+                </g>
+                <g id="Group" transform="translate(22.505956, 12.254020) rotate(27.000000) translate(-22.505956, -12.254020) translate(20.505956, 6.254020)">
+                    <rect id="Rectangle" fill="#5FD9D1" x="0" y="0" width="2" height="9"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#39CCC7" x="2" y="0" width="2" height="9"></rect>
+                    <polygon id="Triangle" fill="#EBD268" transform="translate(2.000000, 10.500000) rotate(-180.000000) translate(-2.000000, -10.500000) " points="2 9 4 12 0 12"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="26px" viewBox="0 0 27 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>check-circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="导入-layout修改" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="重新导入，导入成功" transform="translate(-752.000000, -831.000000)" stroke="#8AE6DC" stroke-width="2">
+            <g id="Group" transform="translate(719.000000, 787.000000)">
+                <g id="check-circle" transform="translate(34.000000, 45.000000)">
+                    <path d="M23.8095238,10.9880952 L23.8095238,12.0952381 C23.8065093,17.3674832 20.3360642,22.0097773 15.2801814,23.504644 C10.2242986,24.9995107 4.78737327,22.9908478 1.91780367,18.5679361 C-0.951765924,14.1450245 -0.57040066,8.36147497 2.85508833,4.35365731 C6.28057731,0.345839656 11.9341817,-0.931517519 16.75,1.21428571" id="Shape"></path>
+                    <polyline id="Shape" points="25 1.38095238 11.9047619 14.4761905 8.33333333 10.9047619"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

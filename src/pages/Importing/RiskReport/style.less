@@ -1,0 +1,369 @@
+.fullboard{
+  width: 100%;
+  .tagselection{
+    float: right;
+    white-space: pre-wrap;
+    color: #242600;
+    margin-right: 10px;
+    line-height: 30px;
+    font-size: 10px;
+    user-select: none;
+    >span{
+      cursor: pointer;
+    }
+    .activespan{
+      color: #4291EB;
+      font-weight: 500;
+    }
+  }
+  .breadLine{
+    width: 100%;
+    overflow: hidden;
+    color: #54565A;
+  }
+  .blocks{
+    >div{
+      background: white;
+      float: left;
+      margin-bottom: 8px;
+      margin-right: 8px;
+    }
+    >div:nth-child(1), >div:nth-child(3),>div:nth-child(4), >div:nth-child(6){
+      width: calc(~'25% - 8px');
+    }
+    >div:nth-child(2), >div:nth-child(5){
+      width: calc(~'50% - 8px');
+    }
+    >div:nth-child(3), >div:nth-child(6){
+      margin-right: 0;
+      width: 25%;
+    }
+  }
+  .titleLine{
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    .subTitle{
+      float: left;
+      background: #E5E8ED;
+      text-align: center;
+      line-height: 30px;
+      padding: 0 30px;
+    }
+  }
+  .datablocks{
+    margin: 5px;
+    overflow: hidden;
+    .datablock{
+      border-bottom: 1px solid #E5E8ED;
+      padding-left: 12px;
+      height: 90px;
+      width: 50%;
+      float: left;
+      &:nth-child(1), &:nth-child(3){
+        border-right: 1px solid #E5E8ED;
+      }
+      .datatitle{
+        font-size: 1px;
+        color: #54565A;
+        font-weight: 500;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+      .datacontent{
+        overflow: hidden;
+        padding: 15px 0;
+        .bignum{
+          float: left;
+          font-size: 24px;
+          color: #FF450D;
+        }
+        .numunit{
+          float: left;
+          font-size: 12px;
+          color: #FF450D;
+          margin: 13px 10px 0 10px;
+        }
+        .numdeno{
+          float: left;
+          font-size: 12px;
+          margin: 13px 0 0 0;
+        }
+      }
+    }
+  }
+  .feepie{
+    .datatitle{
+      font-size: 1px;
+      color: #54565A;
+      font-weight: 500;
+      font-size: 12px;
+      margin: 18px 18px 0 18px;
+    }
+  }
+  .datatable{
+    margin: 0 20px;
+    color: #54565A;
+    font-size: 10px;
+    :global{
+      .ant-table-thead > tr > th{
+        height: 30px;
+        background: white;
+        font-size: 10px;
+        color: #292B2C;
+        font-weight: 500;
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+  .gender{
+    height: 100px;
+    width: calc(~'100% - 10px');
+    border-bottom: 1px solid #E5E8ED;
+    margin: 0 5px;
+    overflow: hidden;
+    font-size: 10px;
+    color: #54565A;
+    .genderpic{
+      width: 30%;
+      height: 100%;
+      float: left;
+      margin-top: 20px;
+      .genderlabel{
+        margin-top: 12px;
+      }
+    }
+    .genderbar{
+      width: 40%;
+      height: 100%;
+      padding: 10px 20px;
+      float: left;
+      .percent{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        white-space: pre-wrap;
+      }
+      .percentbar{
+        height: 10px;
+        width: 100%;
+        background-color: white;
+      }
+    }
+  }
+  .genderbarchart{
+    height: 140px;
+    width: calc(~'100% - 10px');
+    border-bottom: 1px solid #E5E8ED;
+    margin: 0 5px;
+  }
+  .detailCard{
+    width: 100%;
+    height: 800px;
+    .selects{
+      width: 100%;
+      height: 80px;
+      color: rgba(0,0,0,0.65);
+      overflow: hidden;
+      .singleselect{
+        width: 18%;
+        margin-right: 2%;
+        height: 80px;
+        float:left;
+        .label{
+          margin-bottom: 8px;
+        }
+        .selectline{
+          width: 100%;
+        }
+      }
+    }
+    .caseamount{
+      font-size: 14px;
+      color: #54565A;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+  }
+}
+.casetable{
+  :global{
+    .ant-table-thead > tr > th{
+      height: 45px;
+      background: #F0F2F5;
+      font-size: 14px;
+      color: #4A4A4A;
+      font-weight: 400;
+      padding: 0 0 0 20px;
+    }
+    .ant-table-tbody > tr > td{
+      height: 45px;
+    }
+  }
+}
+.popcard{
+  z-index: 100;
+  width: 70%;
+  padding-left: 10px;
+  height: calc(~'100% - 169px');
+  position: absolute;
+  right: 0;
+  top: 169px;
+  box-shadow: -2px 0 12px 0 rgba(20,20,20,0.08);
+  overflow: scroll;
+  .casetable{
+    :global{
+      .ant-table-thead > tr > th{
+        font-weight: 500;
+      }
+    }
+  }
+  .closeicon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .riskinfo{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: 20px;
+    .risktag{
+      width: 33%;
+      height: 80px;
+      color: #4A4A4A;
+      display: flex;
+      justify-content: left;
+      .risklabel{
+        text-align: right;
+        width: fit-content;
+        margin-top: 10px;
+      }
+      .riskscore, .riskamount, .riskunit{
+        text-align: left;
+        width: fit-content;
+        font-size: 24px;
+      }
+      .riskunit{
+        font-size: 14px;
+        margin: 10px 0 0 3px;
+      }
+    }
+  }
+  .casesubtitle{
+    font-size: 14px;
+    color: #4A4A4A;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .basicblock{
+    background: #F5F6F8;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    >div{
+      line-height: 30px;
+      padding: 10px;
+    }
+  }
+  .singleEvent{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    .eventTitle{
+      background: #F5F6F8;
+      border-left: 7px solid #54565A;
+      height: 33px;
+      width: 70%;
+      float:left;
+      // overflow: hidden;
+      .warningicon{
+        position: absolute;
+        left: 15px;
+        padding-top: 10px;
+        color: #FF450D;
+      }
+      .eventno{
+        width: 15%;
+        float: left;
+        padding-left: 15px;
+        padding-top: 5px;
+      }
+      .eventid{
+        width: 30%;
+        float: left;
+        padding-top: 5px;
+      }
+      .eventdiagnosis{
+        width: 50%;
+        float: left;
+        padding-top: 5px;
+      }
+      .downicon{
+        padding-top: 10px;
+      }
+    }
+    .comment{
+      float: left;
+      margin-left: 20px;
+      line-height: 33px;
+      font-size: 12px;
+      color: #FF450D;
+    }
+  }
+}
+.hoverhint{
+  background: rgba(20, 20, 20, 0.7);
+  color: white;
+  padding: 3px 6px;
+  pointer-events:none,
+}
+.detailLine{
+  width: 100%;
+  overflow: hidden;
+  .detailTag{
+    width:25%;
+    float: left;
+    font-weight: 600;
+    line-height: 35px;
+    margin-top: 15px;
+    word-break: break-word;
+  }
+}
+.hightlight{
+  background-color: yellow;
+  display: inline-block;
+}
+.others{
+  display: inline-block;
+  font-size: 12px;
+  color:#4291EB;
+  margin-left: 5px;
+}
+.poptitle{
+  color:#EB3850;
+  font-weight: 500;
+  margin: 6px 0;
+}
+.riskbtns{
+  overflow: hidden;
+  margin: 10px 0 5px 0;
+  >div{
+    float: right;
+    background-color: #989CA3;
+    user-select: none;
+    color: white;
+    border-radius: 2px;
+    margin-left: 10px;
+    width: 60px;
+    text-align: center;
+    line-height: 24px;
+  }
+}

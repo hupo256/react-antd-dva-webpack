@@ -1,0 +1,78 @@
+{
+  "type" : "index",
+  "spec" : {
+    "dataSchema" : {
+      "dataSource" : "report_claim_event",
+      "parser" : {
+        "type" : "string",
+        "parseSpec" : {
+          "format" : "csv",
+          "columns":[
+            "create_time","company_code","batch_id","claim_id","event_no","ill_code","third_ill_name","care_date","in_date","out_date","in_days","hospital_name","hospital_grade_name",
+                "accident_province_name","accident_city_name","accident_area_name","insured_name","insured_gender_name",
+                "insured_id_type_name","insured_id","insured_birthday","accident_subtype","hospital_region","risk_name","risk_score","risk_count_score","risk_level","risk_amount",
+                "risk_count_amount","risk_description","tree_event_no","tree_event_pay"
+          ],
+          "dimensionsSpec" : {
+            "dimensions" : [
+              "create_time","company_code","batch_id","claim_id","event_no","ill_code","third_ill_name","care_date","in_date","out_date","in_days","hospital_name","hospital_grade_name",
+                "accident_province_name","accident_city_name","accident_area_name","insured_name","insured_gender_name",
+                "insured_id_type_name","insured_id","insured_birthday","accident_subtype","hospital_region","risk_name","risk_score","risk_count_score","risk_level","risk_amount",
+                "risk_count_amount","risk_description","tree_event_no","tree_event_pay"]
+          },
+          "timestampSpec" : {
+            "format" : "auto",
+            "column" : "create_time"
+          }
+        }
+      },
+      "metricsSpec" : [
+			{
+              "type" : "count",
+              "name" : "count"
+            },
+            {
+              "name" : "in_days_sum",
+              "type" : "longSum",
+              "fieldName" : "in_days"
+            },
+            {
+              "type" : "doubleSum",
+              "name" : "risk_amount_sum",
+              "fieldName" : "risk_amount"
+            },
+            {
+              "type" : "doubleSum",
+              "name" : "risk_count_amount_sum",
+              "fieldName" : "risk_count_amount"
+            },
+            {
+              "type" : "doubleSum",
+              "name" : "tree_event_pay_sum",
+              "fieldName" : "tree_event_pay"
+            }     
+      ],
+      "granularitySpec" : {
+        "type" : "uniform",
+        "segmentGranularity" : "day",
+        "queryGranularity" : "day",
+        "rollup" : false
+      }
+    },
+    "ioConfig" : {
+      "type" : "index",
+      "firehose" : {
+        "type" : "local",
+        "baseDir" : "./",
+        "filter" : "claim_data_10000.csv"
+      },
+      "appendToExisting" : false
+    },
+    "tuningConfig" : {
+      "type" : "index",
+      "targetPartitionSize" : 5000000,
+      "maxRowsInMemory" : 25000,
+      "forceExtendableShardSpecs" : true
+    }
+  }
+}

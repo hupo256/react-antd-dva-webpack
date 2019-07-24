@@ -1,0 +1,365 @@
+.fullboard {
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+      margin-top: 10px;
+    }
+    .ant-calendar-picker-input {
+      width: 220px;
+    }
+  }
+  .marginBottom {
+    margin-bottom: 20px !important;
+  }
+  .alignRight {
+    text-align: right;
+  }
+  .newBtn {
+    border: 1px solid #4291eb;
+    color: #4291eb;
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+  .delBtn {
+    border: 1px solid #eb3850;
+    border-radius: 4px;
+    color: #eb3850;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+}
+.newBatchModal {
+  top: 20%;
+  :global {
+    .ant-modal-header {
+      border-bottom: none;
+      background-color: #fbfbfb;
+    }
+    .ant-modal-footer {
+      border-top: none;
+      background-color: #fbfbfb;
+    }
+  }
+  .newBatch {
+    overflow: hidden;
+    > div {
+      height: 40px;
+    }
+    > div:nth-child(odd) {
+      width: 40%;
+      text-align: right;
+      float: left;
+    }
+    > div:nth-child(even) {
+      width: 60%;
+      text-align: left;
+      float: left;
+    }
+    > div:nth-child(3) {
+      &:before {
+        content: '*';
+        color: #eb3850;
+        margin-right: 5px;
+      }
+    }
+    > div:nth-child(4) {
+      height: 50px;
+      color: #eb3850;
+      font-size: 12px;
+    }
+  }
+}
+
+.topLine {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  :global {
+    .ant-upload.ant-upload-select {
+      display: block;
+    }
+    .ant-upload-list {
+      display: none;
+    }
+  }
+}
+.priBtn {
+  width: 100px;
+  background: #4291eb;
+  border: 1px solid #4291eb;
+  color: white;
+  border-radius: 4px;
+  float: right;
+}
+.disabledpriBtn {
+  width: 100px;
+  background: #99cfff;
+  border: 1px solid #99cfff;
+  color: white;
+  border-radius: 4px;
+  float: right;
+  &:hover,
+  &:focus {
+    background: #99cfff;
+    border: 1px solid #99cfff;
+    color: white;
+  }
+}
+.subBtn {
+  width: 100px;
+  border: 1px solid #4291eb;
+  color: #4291eb;
+  border-radius: 4px;
+  background: transparent;
+  float: right;
+  margin-left: 15px;
+}
+.disabledBtn {
+  width: 100px;
+  border: 1px solid #99cfff;
+  color: #99cfff;
+  border-radius: 4px;
+  background: transparent;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  user-select: none;
+  margin-left: 15px;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid #99cfff;
+    color: #99cfff;
+  }
+}
+.delBtn {
+  border: 1px solid #eb3850;
+  border-radius: 4px;
+  color: #eb3850;
+  float: right;
+  user-select: none;
+  background-color: transparent;
+  margin-left: 15px;
+  // margin: 25px 100px 20px 0;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid #eb3850;
+    color: #eb3850;
+  }
+}
+.disabledDelBtn {
+  color: #ffb8ba;
+  float: right;
+  border: 1px solid #ffb8ba;
+  margin-left: 15px;
+  // margin: 25px 100px 20px 0;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid #ffb8ba;
+    color: #ffb8ba;
+  }
+}
+
+.batchCard {
+  overflow: hidden;
+  box-shadow: 0 0 4px 0 rgba(127, 127, 127, 0.26);
+  .batchingSlot {
+    width: 50%;
+    float: left;
+    text-align: center;
+    &:first-child {
+      border-right: 1px solid #e8e8e8;
+    }
+    > div:first-child {
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 22px;
+      font-size: 14px;
+    }
+    > div:nth-child(2) {
+      font-size: 17px;
+      color: #4a4a4a;
+      line-height: 32px;
+    }
+  }
+}
+.initBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  :global {
+    .ant-upload.ant-upload-select {
+      display: block;
+    }
+  }
+  .uploadCover {
+    margin-top: 150px;
+    width: 250px;
+    height: 250px;
+    padding: 35px 20px;
+    margin-left: calc(~'50% - 125px');
+    text-align: center;
+    background: rgba(83, 84, 97, 0.05);
+    border: 2px dashed rgba(84, 86, 90, 0.2);
+    border-radius: 6px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  > img {
+    width: 300px;
+    margin-left: calc(~'50% - 150px');
+    margin-top: 125px;
+  }
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 16px;
+    color: #9b9b9b;
+  }
+  .uploadInfo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #777a7f;
+    line-height: 40px;
+  }
+  .startBtn {
+    font-size: 20px;
+    color: #4291eb;
+    margin: 0 3px;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.uploadBoard {
+  width: 100%;
+  height: 660px;
+  margin-top: 25px;
+  overflow: hidden;
+  .leftPart {
+    width: 55%;
+    height: 660px;
+    overflow: scroll;
+    float: left;
+    .importCard {
+      margin-right: 25px;
+      margin-bottom: 20px;
+      min-width: 505px;
+      box-shadow: 0 0 4px 0 rgba(127, 127, 127, 0.26);
+      background: white;
+      border-radius: 4px;
+      min-height: 110px;
+      overflow: hidden;
+      .importSlot {
+        float: left;
+        padding: 25px 0 25px 5%;
+        line-height: 30px;
+        .slotTitle {
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: bold;
+        }
+        &:first-child {
+          width: 30%;
+          min-width: 160px;
+        }
+        &:nth-child(2) {
+          width: 20%;
+          min-width: 100px;
+        }
+        &:last-child {
+          min-width: 235px;
+        }
+      }
+      .closeIcon {
+        position: relative;
+        top: 45px;
+        right: 20px;
+        font-size: 20px;
+        color: #adb1b8;
+        float: right;
+      }
+      .closable {
+        &:hover {
+          color: #4a4a4a;
+          cursor: pointer;
+        }
+      }
+    }
+    .calculatingBar {
+      height: 45px;
+      border: 1px solid #c2e4ff;
+      width: calc(~'100% - 25px');
+      line-height: 45px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      color: #2d6fc4;
+      .calculatingFilling {
+        background: #c2e4ff;
+        padding: 0 18px;
+        height: 45px;
+      }
+      .calculatingFilled {
+        background: #baebe5;
+        padding: 0 18px;
+        height: 45px;
+      }
+    }
+  }
+  .rightPart {
+    width: 45%;
+    height: 100%;
+    overflow: scroll;
+    float: left;
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(127, 127, 127, 0.26);
+    border-radius: 4px;
+    padding: 20px;
+    .titleLine {
+      overflow: hidden;
+      margin-bottom: 15px;
+      .titleFont {
+        float: left;
+        line-height: 30px;
+        margin: 0 15px;
+        color: #4a4a4a;
+        font-weight: bold;
+      }
+      > img {
+        float: left;
+      }
+      .downloadIcon {
+        float: right;
+        line-height: 30px;
+        font-size: 24px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    :global {
+      .ant-table-thead > tr > th {
+        border-bottom: none;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.notification {
+  position: absolute;
+  bottom: 100px;
+  left: calc(~'50% - 50px');
+  width: 300px;
+  height: 120px;
+  padding: 30px;
+  background: rgba(119, 122, 127, 0.99);
+  border-radius: 1px;
+  color: white;
+  font-size: 16px;
+  z-index: 1000;
+}
